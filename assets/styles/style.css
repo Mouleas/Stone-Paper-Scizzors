@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/minimalist-dark-topographic-map-background_23-2148596525.jpg");
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1{
+    font-size: 40px;
+    font-family: 'Bad Script', cursive;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    margin: 20px;
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+
+.col > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.buttons {
+    padding-top: 55px;
+}
+
+.container a {
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #00D100;
+    border-radius: 10px;
+    color: white;
+}
+
+.container a:hover {
+    background-color: #005300;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: black;
+    width: 20px;
+    height: 10px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.buttons a:hover {
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+#result {
+    font-size: 20px;
+    color: white;
+}
+mark {
+    padding: 10px;
+}
+
+
+.scoreboard {
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    width: fit-content;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}

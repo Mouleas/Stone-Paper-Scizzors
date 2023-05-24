@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><strong>Stone, Paper & Scizzors</strong></h1>
+
+        <div class="scoreboard">
+            <h2>Scoreboard</h2>
+            <h3 id="compScore"></h3>
+            <h3 id="myScore"></h3>
+        </div>
+        
+
+        <h2>Computer <span style="color: rgb(237, 58, 58);">vs</span>  Human</h2>
+
+        <div class="row">
+            <div class="col">
+                <img src="assets/images/paper.jpg" alt="" id="compImg">
+            </div>
+            <div class="col">
+                <img src="assets/images/stone.avif" alt="" id="userImg">
+            </div>
+            <div class="buttons">
+                <a onclick="changePic(0)">🗿</a></button>
+                <br><br>
+                <a onclick="changePic(1)">📄</a>
+                <br><br>
+                <a onclick="changePic(2)">✂</a>
+            </div>
+        </div>
+        <p id="result"></p>
+        <br>
+        <a onclick="predictWinner()">Play</a>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
