@@ -1,4 +1,4 @@
-let userSelection = 0;
+let userSelection = -1;
 
 let myscore = 0;
 let compscore = 0;
@@ -11,6 +11,10 @@ function changePic(num){
 }
 
 async function predictWinner(){
+    if (userSelection === -1){
+        document.getElementById("userImg").src = "assets/images/"+images[0];
+        userSelection = 0;
+    }
     for (var i=0; i < 5; i++){
         document.getElementById("compImg").src = "assets/images/"+images[i%3];
         await new Promise(resolve => setTimeout(resolve, 100));
