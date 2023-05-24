@@ -10,7 +10,12 @@ function changePic(num){
     userSelection = num;
 }
 
-function predictWinner(){
+async function predictWinner(){
+    for (var i=0; i < 5; i++){
+        document.getElementById("compImg").src = "assets/images/"+images[i%3];
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
+
     var random  = Math.floor(Math.random() * 3);
     document.getElementById("compImg").src = "assets/images/"+images[random];
 
